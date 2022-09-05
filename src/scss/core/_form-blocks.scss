@@ -1,0 +1,71 @@
+.form-input {
+  position: relative;
+
+  input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 20px;
+    height: 55px;
+    background: white;
+    border: 1px solid #D9D9D9;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #383E42;
+    box-sizing: border-box;
+    transition: all .2s;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: #CDCCBF;
+    }
+
+    &:focus {
+      border-color: #A8ABAC;
+    }
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    z-index: 5;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    content: url("../images/icons/tick--success.svg");
+    position: absolute;
+    height: 24px;
+    bottom: 14px;
+    right: 20px;
+    opacity: 0;
+    transition: all .2s;
+    z-index: 1;
+  }
+
+  &.error {
+    input, textarea {
+      border-color: #C94F6E;
+    }
+
+    &:after {
+      content: url("../images/icons/error-cross.svg");
+      opacity: 1;
+      bottom: 13px;
+    }
+  }
+
+  &.--success {
+    &:after {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+//grid overrides
+$grid-breakpoints: (
+        xs: 0,
+        sm: 760px,
+        md: 1000px,
+        lg: 1200px,
+        xl: 1600px
+);
+$container-max-widths: (
+        sm: 760px,
+        md: 1000px,
+        lg: 1176px,
+        xl: 1320px
+);
+$grid-gutter-width: 30px;
+
+//UTILITIES
+$spacers: (
+        0: 0,
+        1: 1px,
+        3: 3px,
+        5: 5px,
+        10: 10px,
+        20: 20px,
+        30: 30px,
+        40: 40px,
+        50: 50px,
+);
+
+//MODAL
+$modal-content-border-width: 0;
+$modal-content-border-radius: 0;
+$modal-backdrop-bg: #383E42;
+$modal-backdrop-opacity: .7;
+$modal-md: 850px;

@@ -1,0 +1,130 @@
+
+.owl-carousel {
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 2px;
+    margin-top: auto;
+
+    .owl-dot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -5px 0;
+      padding: 5px 0 !important;
+
+      span {
+        width: 10px;
+        height: 2px;
+        z-index: 2;
+        background: #FFFFFF;
+        opacity: 0.34;
+      }
+
+      &.active {
+        span {
+          background: #C94F6E;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (max-width: 1023px) {
+      margin-top: 10px;
+    }
+  }
+
+  .owl-nav {
+    display: flex;
+    gap: 10px;
+
+    button.owl-prev,
+    button.owl-next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      margin: 0;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.7);
+      color: #383E42;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(5px);
+      transition: all .2s;
+
+      svg {
+        width: 10px;
+        height: 7px;
+      }
+
+      &:hover {
+        background: linear-gradient(180deg, #C94F6E 0%, #E08899 100%);
+        color: white;
+      }
+
+      &:active {
+        background: linear-gradient(180deg, #A82043 0%, #C94869 100%);
+        color: white;
+      }
+
+      &.disabled {
+        opacity: .5;
+        background: rgba(255, 255, 255, 0.7);
+        color: #383E42;
+        pointer-events: none;
+      }
+
+      @media (min-width: 1000px) {
+        width: 55px;
+        height: 55px;
+        svg {
+          width: 18px;
+          height: 12px;
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      margin-top: 10px;
+    }
+  }
+
+  &.owl-nav-absolute {
+    .owl-nav {
+      button.owl-prev,
+      button.owl-next {
+        position: absolute;
+        top: calc(50% - 30px);
+        //top: calc(50% - 40px);
+        transform: translateY(-50%);
+      }
+
+      .owl-prev {
+        //left: -26px;
+        left: -7px;
+      }
+
+      .owl-next {
+        //right: -26px;
+        right: -7px;
+      }
+
+      @media (min-width: 1000px) {
+        button.owl-prev,
+        button.owl-next {
+          top: calc(50% - 40px);
+        }
+        .owl-prev {
+          left: -26px;
+        }
+        .owl-next {
+          right: -26px;
+        }
+      }
+    }
+  }
+}

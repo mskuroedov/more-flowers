@@ -1,0 +1,53 @@
+.h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #383E42;
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.text-body-md {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.text-body-lg {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text-body-xl {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.text-color-primary {
+  color: #383E42;
+}
+
+.text-color-secondary {
+  color: #383E42;
+  opacity: 0.7;
+}
+
+.text-color-muted {
+  color: #808080;
+}
+
+.link {
+  font-size: 15px;
+  line-height: 22px;
+  color: #C94F6E;
+
+  &:hover {
+    color: #9F324E;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,27 @@
+.btn-gradient {
+  font-family: 'Athelas', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 55px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0;
+  height: 55px;
+  padding: 0 35px;
+  color: white;
+  background: linear-gradient(180deg, #E08899 -10%, #C94F6E 110%) #E08899;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background: #C94F6E;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #A82043 0%, #C94869 100%);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

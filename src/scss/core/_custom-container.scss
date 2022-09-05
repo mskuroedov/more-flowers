@@ -1,0 +1,17 @@
+@mixin customContainerWidth($containerWidth) {
+  width: calc(100% / 2 + (#{$containerWidth} * (1 / 2) - 15px));
+}
+.custom-container{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  @include media-breakpoint-up(md) {
+    @include customContainerWidth(1000px)
+  }
+  @include media-breakpoint-up(lg) {
+    @include customContainerWidth(1176px)
+  }
+  @include media-breakpoint-up(xl) {
+    @include customContainerWidth(1320px)
+  }
+}

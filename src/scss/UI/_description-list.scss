@@ -1,0 +1,38 @@
+.description-list {
+  margin-bottom: 15px;
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #383E42;
+    margin-bottom: 15px;
+  }
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position: relative;
+
+    dt, dd {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      color: #808080;
+      background: white;
+      position: relative;
+      z-index: 3;
+    }
+
+    &:before {
+      position: absolute;
+      z-index: 2;
+      content: '';
+      left: 0;
+      bottom: 14px;
+      height: 0;
+      width: 100%;
+      border-bottom: thin dashed #D9D9D9;
+    }
+  }
+}
